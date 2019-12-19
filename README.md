@@ -9,3 +9,6 @@ Nixietube 一位数码管
 timer 定时器
 interrupt 中断
 
+版本：V1.1
+时间：2019.12.19
+更新GPIO，增加GPIO配置函数
