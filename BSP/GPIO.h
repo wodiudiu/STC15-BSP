@@ -47,5 +47,6 @@ typedef struct
 } GPIO_InitTypeDef;
 
 u8	GPIO_Inilize(u8 GPIO, GPIO_InitTypeDef *GPIOx);
+void	GPIO_config(void)
 
 #endif

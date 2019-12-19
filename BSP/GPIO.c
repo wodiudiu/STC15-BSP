@@ -21,6 +21,23 @@
 #include	"GPIO.h"
 
 
+
+//========================================================================
+// 函数: void	GPIO_config(void)
+// 描述: GPIO端口配置
+// 参数: 无
+// 返回: 无
+// 版本: V1.0, 2019-12-19
+//========================================================================
+void	GPIO_config(void)
+{
+	GPIO_InitTypeDef	GPIO_InitStructure;		//结构定义
+	GPIO_InitStructure.Pin  = GPIO_Pin_All;		//指定要初始化的IO, GPIO_Pin_0 ~ GPIO_Pin_7, 或操作
+	GPIO_InitStructure.Mode = GPIO_OUT_PP;		//指定IO的输入输出方式,GPIO_PullUp,GPIO_HighZ,GPIO_OUT_OD,GPIO_OUT_PP
+	GPIO_Inilize(GPIO_P0,&GPIO_InitStructure);	//初始化
+}
+
+
 //========================================================================
 // 函数: u8	GPIO_Inilize(u8 GPIO, GPIO_InitTypeDef *GPIOx)
 // 描述: 初始化IO口.
